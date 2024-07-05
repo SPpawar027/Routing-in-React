@@ -46,6 +46,20 @@ export const Nav = () => {
           );
         }}
       </NavLink>
+      <NavLink
+      style={(e) => {
+        return {
+          color: e.isActive ? "tomato" : "",
+          fontWeight: e.isActive ? "500" : "",
+          transform: e.isActive ? "scale(1.5)" : "scale(1)",
+          transition: "transform 0.4s ease",
+        };
+      }}
+      
+      to="/User1">
+        
+           User
+      </NavLink>
     </nav>
   );
 };
